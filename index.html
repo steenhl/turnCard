@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css"
+  </head>
+
+  <body>
+    <div id="app">
+      <table class="card-container">
+        <tbody>
+          <tr class="card">
+            <td class="front">up</td>
+            <td class="back">down</td>
+          </tr>
+          <tr class="card">
+            <td class="front">up</td>
+            <td class="back">down</td>
+          </tr>
+          <tr class="card">
+            <td class="front">up</td>
+            <td class="back">down</td>
+          </tr>
+          <tr class="card">
+            <td class="front">up</td>
+            <td class="back">down</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script>
+      function ready(fn) {
+        console.log(1);
+        var d = document;
+        d.readyState == "loading"
+          ? d.addEventListener("DOMContentLoaded", fn)
+          : fn();
+      }
+      ready(function () {
+        console.log(2);
+      });
+    </script>
+    <script src="src/index.js"></script>
+  </body>
+</html>
